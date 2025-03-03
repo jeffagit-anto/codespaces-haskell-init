@@ -1,5 +1,5 @@
 # OS
-ARG VARIANT="ubuntu-22.04"
+ARG VARIANT="slim"
 FROM haskell:${VARIANT}
 # change user
 USER vscode
