@@ -35,7 +35,7 @@ RUN sudo sh /tmp/get-ghcup.haskell.org.sh
 # Install HLS, with a special glimpse for 9.10.1
 # see https://github.com/haskell/haskell-language-server/issues/3225#issuecomment-2660166509
 # RUN sudo /root/.ghcup/bin/ghcup compile hls --git-ref master --ghc 9.10.1 --cabal-update
-RUN sudo /root/.ghcup/bin/ghcup compile hls -v 2.9.0.1 --ghc 9.10.1 --cabal-update
+# RUN sudo /root/.ghcup/bin/ghcup compile hls -v 2.9.0.1 --ghc 9.10.1 --cabal-update
 # RUN sudo /root/.ghcup/bin/ghcup compile hls --help
 
 # Process "cabal" with arguments ["v2-install","-w","ghc-9.10.1","--install-method=copy","--overwrite-policy=always","--disable-profiling","--disable-tests","--installdir=/root/.ghcup/tmp/ghcup-36c14808a9b6ce2e/out/9.10.1","--project-file=cabal.project","exe:haskell-language-server","exe:haskell-language-server-wrapper"] failed with exit code 1.
