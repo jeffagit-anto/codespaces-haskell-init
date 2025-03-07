@@ -1,0 +1,827 @@
+[28 ms] Dev Containers 0.397.0 in VS Code 1.89.1 (dc96b837cf6bb4af9cd736aa3af08cf8279f7685).
+[28 ms] Start: Run: wsl -d haskelll -e wslpath -u \\wsl.localhost\haskelll\home\a697670\git\codespaces-haskell-init
+[175 ms] Start: Resolving Remote
+[180 ms] Start: Run: wsl -d haskelll -e wslpath -u \\wsl.localhost\haskelll\home\a697670\git\codespaces-haskell-init
+[301 ms] Start: Run: wsl -d haskelll -e /bin/sh -c cd '/home/a697670/git/codespaces-haskell-init' && /bin/sh
+[307 ms] Start: Run in host: id -un
+[368 ms] a697670
+[368 ms] 
+[368 ms] Start: Run in host:  (command -v getent >/dev/null 2>&1 && getent passwd 'a697670' || grep -E '^a697670|^[^:]*:[^:]*:a697670:' /etc/passwd || true)
+[371 ms] Start: Run in host: echo ~
+[371 ms] /home/a697670
+[372 ms] 
+[372 ms] Start: Run in host: test -f '/home/a697670/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/node'
+[373 ms] 
+[373 ms] 
+[373 ms] Exit code 1
+[373 ms] Start: Run in host: test -f '/home/a697670/.vscode/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/node'
+[374 ms] 
+[374 ms] 
+[374 ms] Exit code 1
+[374 ms] Start: Run in host: test -f '/home/a697670/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'
+[376 ms] 
+[376 ms] 
+[376 ms] Start: Run in host: test -f '/home/a697670/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node_modules/node-pty/package.json'
+[377 ms] 
+[378 ms] 
+[378 ms] Start: Run in host: test -f '/home/a697670/.vscode-remote-containers/dist/vscode-remote-containers-server-0.397.0.js'
+[378 ms] 
+[378 ms] 
+[379 ms] userEnvProbe: loginInteractiveShell (default)
+[379 ms] userEnvProbe: not found in cache
+[379 ms] userEnvProbe shell: /bin/zsh
+[1065 ms] userEnvProbe PATHs:
+Probe:     '/home/a697670/.nvm/versions/node/v22.14.0/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/a697670/AppData/Local/Microsoft/WindowsApps:/mnt/c/src/flutter/bin:/mnt/c/Users/a697670/AppData/Local/Programs/Git/cmd:/snap/bin:/usr/bin/dev-box'
+Container: None
+[1066 ms] Setting up container for folder or workspace: /home/a697670/git/codespaces-haskell-init
+[1108 ms] Start: Check Docker is running
+[1108 ms] Start: Run in Host: docker version
+[1165 ms] Client: Docker Engine - Community
+ Version:           28.0.1
+ API version:       1.48
+ Go version:        go1.23.6
+ Git commit:        068a01e
+ Built:             Wed Feb 26 10:41:12 2025
+ OS/Arch:           linux/amd64
+ Context:           default
+
+[1166 ms] Server: Docker Engine - Community
+ Engine:
+  Version:          28.0.1
+  API version:      1.48 (minimum version 1.24)
+  Go version:       go1.23.6
+  Git commit:       bbd0a17
+  Built:            Wed Feb 26 10:41:12 2025
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.7.25
+  GitCommit:        bcc810d6b9066471b0b6fa75f557a15a1cbf31bb
+ runc:
+  Version:          1.2.4
+  GitCommit:        v1.2.4-0-g6c52b3f
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[1168 ms] Start: Run in Host: docker volume ls -q
+[1209 ms] Start: Run in Host: docker inspect --type container 676c3000ef29f616a359cc621e20b4935e581279e2b657f4018b1aa5226f611c
+[1251 ms] Start: Run in Host: docker ps -q -a --filter label=vsch.local.folder=\\wsl.localhost\haskelll\home\a697670\git\codespaces-haskell-init --filter label=vsch.quality=stable
+[1293 ms] Start: Run in Host: docker ps -q -a --filter label=devcontainer.local_folder=\\wsl.localhost\haskelll\home\a697670\git\codespaces-haskell-init --filter label=devcontainer.config_file=/home/a697670/git/codespaces-haskell-init/.devcontainer/devcontainer.json
+[1346 ms] Start: Run in Host: docker ps -q -a --filter label=devcontainer.local_folder=\\wsl.localhost\haskelll\home\a697670\git\codespaces-haskell-init
+[1425 ms] Start: Run in Host: docker ps -q -a --filter label=devcontainer.local_folder=\\wsl.localhost\haskelll\home\a697670\git\codespaces-haskell-init
+[1532 ms] Running Dev Containers CLI:   up --container-session-data-folder /tmp/devcontainers-6e266566-039f-41f9-9b59-29e81fb2a1e51741184992499 --workspace-folder /home/a697670/git/codespaces-haskell-init --workspace-mount-consistency cached --gpu-availability detect --id-label devcontainer.local_folder=\\wsl.localhost\haskelll\home\a697670\git\codespaces-haskell-init --id-label devcontainer.config_file=/home/a697670/git/codespaces-haskell-init/.devcontainer/devcontainer.json --log-level debug --log-format json --config /home/a697670/git/codespaces-haskell-init/.devcontainer/devcontainer.json --default-user-env-probe loginInteractiveShell --build-no-cache --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root --include-configuration --include-merged-configuration
+[1533 ms] Start: Checking for Dev Containers CLI
+[1556 ms] Start: Run in Host: /home/a697670/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /home/a697670/.vscode-remote-containers/dist/dev-containers-cli-0.397.0/dist/spec-node/devContainersSpecCLI.js up --container-session-data-folder /tmp/devcontainers-6e266566-039f-41f9-9b59-29e81fb2a1e51741184992499 --workspace-folder /home/a697670/git/codespaces-haskell-init --workspace-mount-consistency cached --gpu-availability detect --id-label devcontainer.local_folder=\\wsl.localhost\haskelll\home\a697670\git\codespaces-haskell-init --id-label devcontainer.config_file=/home/a697670/git/codespaces-haskell-init/.devcontainer/devcontainer.json --log-level debug --log-format json --config /home/a697670/git/codespaces-haskell-init/.devcontainer/devcontainer.json --default-user-env-probe loginInteractiveShell --build-no-cache --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root --include-configuration --include-merged-configuration
+[2223 ms] @devcontainers/cli 0.73.0. Node.js v18.18.2. linux 5.15.167.4-microsoft-standard-WSL2 x64.
+[2223 ms] Start: Run: docker buildx version
+[2615 ms] github.com/docker/buildx v0.21.1 7c2359c
+[2615 ms] 
+[2616 ms] Start: Run: docker -v
+[2690 ms] Start: Resolving Remote
+[2701 ms] Start: Run: git rev-parse --show-cdup
+[2894 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=\\wsl.localhost\haskelll\home\a697670\git\codespaces-haskell-init --filter label=devcontainer.config_file=/home/a697670/git/codespaces-haskell-init/.devcontainer/devcontainer.json
+[2959 ms] Start: Run: docker inspect --type image debian:bookworm-slim
+[3374 ms] Start: Run: docker-credential-secret get
+[5370 ms] Start: Run: docker buildx build --load --build-arg BUILDKIT_INLINE_CACHE=1 -f /tmp/devcontainercli-a697670/container-features/0.73.0-1741184998520/Dockerfile-with-features -t vsc-codespaces-haskell-init-4a354a7c483f8338168d2012084bed9fdf936403b39fdd7593814ca3f07b3a7e --target dev_containers_target_stage --no-cache --pull --build-arg VARIANT=bookworm-slim --build-arg _DEV_CONTAINERS_BASE_IMAGE=dev_container_auto_added_stage_label /home/a697670/git/codespaces-haskell-init/.devcontainer
+[+] Building 14.7s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      13.7s
+ => => # Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-commo
+ => => # n all 8.2-1.3 [69.0 kB]                                               
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+[+] Building 14.8s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      13.8s
+ => => # Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-commo
+ => => # n all 8.2-1.3 [69.0 kB]                                               
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+[+] Building 15.0s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      14.0s
+ => => # Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-commo
+ => => # n all 8.2-1.3 [69.0 kB]                                               
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+[+] Building 15.1s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      14.1s
+ => => # Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-commo
+ => => # n all 8.2-1.3 [69.0 kB]                                               
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+[+] Building 15.3s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      14.3s
+ => => # Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-commo
+ => => # n all 8.2-1.3 [69.0 kB]                                               
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+[+] Building 15.4s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      14.4s
+ => => # Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-commo
+ => => # n all 8.2-1.3 [69.0 kB]                                               
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+[+] Building 15.6s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      14.6s
+ => => # Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-commo
+ => => # n all 8.2-1.3 [69.0 kB]                                               
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+[+] Building 15.7s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      14.7s
+ => => # Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-commo
+ => => # n all 8.2-1.3 [69.0 kB]                                               
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+[+] Building 15.9s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      14.9s
+ => => # Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-commo
+ => => # n all 8.2-1.3 [69.0 kB]                                               
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+[+] Building 15.9s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      14.9s
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+ => => # Get:12 http://deb.debian.org/debian bookworm/main amd64 libssl3 amd64 
+ => => # 3.0.15-1~deb12u1 [2025 kB]                                            
+[+] Building 16.1s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      15.1s
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+ => => # Get:12 http://deb.debian.org/debian bookworm/main amd64 libssl3 amd64 
+ => => # 3.0.15-1~deb12u1 [2025 kB]                                            
+[+] Building 16.2s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      15.2s
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+ => => # Get:12 http://deb.debian.org/debian bookworm/main amd64 libssl3 amd64 
+ => => # 3.0.15-1~deb12u1 [2025 kB]                                            
+[+] Building 16.4s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      15.4s
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+ => => # Get:12 http://deb.debian.org/debian bookworm/main amd64 libssl3 amd64 
+ => => # 3.0.15-1~deb12u1 [2025 kB]                                            
+[+] Building 16.5s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      15.5s
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+ => => # Get:12 http://deb.debian.org/debian bookworm/main amd64 libssl3 amd64 
+ => => # 3.0.15-1~deb12u1 [2025 kB]                                            
+[+] Building 16.7s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      15.7s
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+ => => # Get:12 http://deb.debian.org/debian bookworm/main amd64 libssl3 amd64 
+ => => # 3.0.15-1~deb12u1 [2025 kB]                                            
+[+] Building 16.8s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      15.8s
+ => => # Get:11 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.
+ => => # 0.8-5+b1 [49.8 kB]                                                    
+ => => # Get:12 http://deb.debian.org/debian bookworm/main amd64 libssl3 amd64 
+ => => # 3.0.15-1~deb12u1 [2025 kB]                                            
+[+] Building 16.9s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      15.9s
+ => => # Get:12 http://deb.debian.org/debian bookworm/main amd64 libssl3 amd64 
+ => => # 3.0.15-1~deb12u1 [2025 kB]                                            
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+[+] Building 17.1s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      16.1s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 17.3s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      16.3s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 17.4s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      16.4s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 17.6s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      16.6s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 17.7s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      16.7s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 17.9s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      16.9s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 18.0s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      17.0s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 18.2s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      17.2s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 18.3s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      17.3s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 18.5s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      17.5s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 18.6s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      17.6s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 18.8s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      17.8s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 18.9s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      17.9s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 19.1s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      18.1s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 19.2s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      18.2s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 19.4s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      18.4s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 19.5s (4/7)                                         docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      18.5s
+ => => # Get:13 http://deb.debian.org/debian bookworm/main amd64 openssl amd64 
+ => => # 3.0.15-1~deb12u1 [1427 kB]                                            
+ => => # Get:14 http://deb.debian.org/debian bookworm/main amd64 ca-certificate
+ => => # s all 20230311 [153 kB]                                               
+[+] Building 589.8s (8/8) FINISHED                               docker:default
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 1.64kB                                     0.0s
+ => [internal] load metadata for docker.io/library/debian:bookworm-slim    1.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => CACHED [dev_container_auto_added_stage_label 1/4] FROM docker.io/libr  0.0s
+ => [dev_container_auto_added_stage_label 2/4] RUN apt-get update &&      98.9s
+ => [dev_container_auto_added_stage_label 3/4] RUN groupadd --gid 1000 vs  0.5s 
+ => [dev_container_auto_added_stage_label 4/4] RUN sudo curl --proto '=  471.3s 
+ => exporting to image                                                    17.9s 
+ => => exporting layers                                                   17.8s 
+ => => preparing layers for inline cache                                   0.0s 
+ => => writing image sha256:f0640636bcd520fe00edee9cdd62d3039e23f738e1b59  0.0s 
+ => => naming to docker.io/library/vsc-codespaces-haskell-init-4a354a7c48  0.0s 
+[595395 ms] Start: Run: docker inspect --type image vsc-codespaces-haskell-init-4a354a7c483f8338168d2012084bed9fdf936403b39fdd7593814ca3f07b3a7e
+[595468 ms] Start: Run: docker build -f /tmp/devcontainercli-a697670/updateUID.Dockerfile-0.73.0 -t vsc-codespaces-haskell-init-4a354a7c483f8338168d2012084bed9fdf936403b39fdd7593814ca3f07b3a7e-uid --platform linux/amd64 --build-arg BASE_IMAGE=vsc-codespaces-haskell-init-4a354a7c483f8338168d2012084bed9fdf936403b39fdd7593814ca3f07b3a7e --build-arg REMOTE_USER=vscode --build-arg NEW_UID=1000 --build-arg NEW_GID=1000 --build-arg IMAGE_USER=vscode /tmp/devcontainercli-a697670/empty-folder
+[+] Building 0.6s (6/6) FINISHED                                 docker:default
+ => [internal] load build definition from updateUID.Dockerfile-0.73.0      0.0s
+ => => transferring dockerfile: 1.36kB                                     0.0s
+ => WARN: InvalidDefaultArgInFrom: Default value for ARG $BASE_IMAGE resu  0.0s
+ => [internal] load metadata for docker.io/library/vsc-codespaces-haskell  0.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => [1/2] FROM docker.io/library/vsc-codespaces-haskell-init-4a354a7c483f  0.1s
+ => [2/2] RUN eval $(sed -n "s/vscode:[^:]*:\([^:]*\):\([^:]*\):[^:]*:\([  0.3s
+ => exporting to image                                                     0.1s
+ => => exporting layers                                                    0.0s
+ => => writing image sha256:8951d4491672e092eb278e00fcc31d4e5f43811bfc80d  0.0s
+ => => naming to docker.io/library/vsc-codespaces-haskell-init-4a354a7c48  0.0s
+
+ 1 warning found (use docker --debug to expand):
+ - InvalidDefaultArgInFrom: Default value for ARG $BASE_IMAGE results in empty or invalid base image name (line 2)
+[596348 ms] Start: Run: docker events --format {{json .}} --filter event=start
+[596351 ms] Start: Starting container
+[596351 ms] Start: Run: docker run --sig-proxy=false -a STDOUT -a STDERR --mount type=bind,source=/home/a697670/git/codespaces-haskell-init,target=/workspaces/codespaces-haskell-init --mount type=volume,src=vscode,dst=/vscode -l devcontainer.local_folder=\\wsl.localhost\haskelll\home\a697670\git\codespaces-haskell-init -l devcontainer.config_file=/home/a697670/git/codespaces-haskell-init/.devcontainer/devcontainer.json --entrypoint /bin/sh vsc-codespaces-haskell-init-4a354a7c483f8338168d2012084bed9fdf936403b39fdd7593814ca3f07b3a7e-uid -c echo Container started
+Container started
+[596699 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=\\wsl.localhost\haskelll\home\a697670\git\codespaces-haskell-init --filter label=devcontainer.config_file=/home/a697670/git/codespaces-haskell-init/.devcontainer/devcontainer.json
+[596754 ms] Start: Run: docker inspect --type container 51269ae67c26
+[596797 ms] Start: Inspecting container
+[596797 ms] Start: Run: docker inspect --type container 51269ae67c267cb10b007e43f02c8af0359cebd175b9fe832ac8fdab82d7ed62
+[596844 ms] Start: Run in container: /bin/sh
+[596848 ms] Start: Run in container: uname -m
+[596933 ms] x86_64
+[596933 ms] 
+[596933 ms] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[596935 ms] PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[596935 ms] 
+[596935 ms] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'vscode' || grep -E '^vscode|^[^:]*:[^:]*:vscode:' /etc/passwd || true)
+[596940 ms] Start: Run in container: test -f '/var/devcontainer/.patchEtcEnvironmentMarker'
+[596943 ms] 
+[596943 ms] 
+[596943 ms] Exit code 1
+[596943 ms] Start: Run in container: /bin/sh
+[596946 ms] Start: Run in container: test ! -f '/var/devcontainer/.patchEtcEnvironmentMarker' && set -o noclobber && mkdir -p '/var/devcontainer' && { > '/var/devcontainer/.patchEtcEnvironmentMarker' ; } 2> /dev/null
+[597036 ms] 
+[597036 ms] 
+[597037 ms] Start: Run in container: cat >> /etc/environment <<'etcEnvrionmentEOF'
+[597041 ms] 
+[597041 ms] 
+[597041 ms] Start: Run in container: test -f '/var/devcontainer/.patchEtcProfileMarker'
+[597043 ms] 
+[597043 ms] 
+[597043 ms] Exit code 1
+[597043 ms] Start: Run in container: test ! -f '/var/devcontainer/.patchEtcProfileMarker' && set -o noclobber && mkdir -p '/var/devcontainer' && { > '/var/devcontainer/.patchEtcProfileMarker' ; } 2> /dev/null
+[597045 ms] 
+[597045 ms] 
+[597045 ms] Start: Run in container: sed -i -E 's/((^|\s)PATH=)([^\$]*)$/\1${PATH:-\3}/g' /etc/profile || true
+[597047 ms] 
+[597048 ms] 
+[597062 ms] Start: Run in Host: docker inspect --type container 51269ae67c267cb10b007e43f02c8af0359cebd175b9fe832ac8fdab82d7ed62
+[597115 ms] Start: Run in Host: docker exec -i -u root 51269ae67c267cb10b007e43f02c8af0359cebd175b9fe832ac8fdab82d7ed62 /bin/sh -c echo "New container started. Keep-alive process started." ; export VSCODE_REMOTE_CONTAINERS_SESSION=6e266566-039f-41f9-9b59-29e81fb2a1e51741184992499 ; /bin/sh
+[597115 ms] Start: Inspecting container
+[597116 ms] Start: Run in Host: docker inspect --type container 51269ae67c267cb10b007e43f02c8af0359cebd175b9fe832ac8fdab82d7ed62
+[597182 ms] Start: Run in Host: docker exec -i -u vscode -e VSCODE_REMOTE_CONTAINERS_SESSION=6e266566-039f-41f9-9b59-29e81fb2a1e51741184992499 51269ae67c267cb10b007e43f02c8af0359cebd175b9fe832ac8fdab82d7ed62 /bin/sh
+[597187 ms] Start: Run in container: uname -m
+[597215 ms] New container started. Keep-alive process started.
+[597279 ms] x86_64
+[597279 ms] 
+[597279 ms] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[597281 ms] PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[597282 ms] 
+[597282 ms] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'vscode' || grep -E '^vscode|^[^:]*:[^:]*:vscode:' /etc/passwd || true)
+[597287 ms] Start: Run in container: command -v git >/dev/null 2>&1 && ROOT_FOLDER="$(git -C '/workspaces/codespaces-haskell-init' rev-parse --show-toplevel)" && test "$(stat -c %u "$ROOT_FOLDER")" != "$(id -u)" && echo -n "$ROOT_FOLDER"
+[597299 ms] 
+[597299 ms] 
+[597299 ms] Exit code 1
+[597300 ms] Start: Updating configuration state
+[597320 ms] Start: Setup shutdown monitor
+[597322 ms] Forking shutdown monitor: c:\Users\a697670\.vscode\extensions\ms-vscode-remote.remote-containers-0.397.0\dist\shutdown\shutdownMonitorProcess \\.\pipe\vscode-remote-containers-01a2bfc0-6dd1-423d-a089-fdf42b66a6ea-sock singleContainer Debug c:\Users\a697670\AppData\Roaming\Code\logs\20250305T104853\window1\exthost\ms-vscode-remote.remote-containers 1741184993161
+[597345 ms] Start: Run in container: test -d '/home/vscode/.vscode-server'
+[597348 ms] 
+[597348 ms] 
+[597348 ms] Exit code 1
+[597348 ms] Start: Run in container: test -d '/home/vscode/.vscode-remote'
+[597350 ms] 
+[597351 ms] 
+[597351 ms] Exit code 1
+[597352 ms] Start: Run in container: test ! -f '/home/vscode/.vscode-server/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/vscode/.vscode-server/data/Machine' && { > '/home/vscode/.vscode-server/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[597363 ms] 
+[597363 ms] 
+[597364 ms] Start: Run in container: cat /home/vscode/.vscode-server/data/Machine/settings.json
+[597366 ms] 
+[597367 ms] cat: /home/vscode/.vscode-server/data/Machine/settings.json: No such file or directory
+[597367 ms] Exit code 1
+[597368 ms] Start: Run in container: test -d '/home/vscode/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685'
+[597374 ms] 
+[597375 ms] 
+[597375 ms] Exit code 1
+[597375 ms] Start: Run in container: test -d '/vscode/vscode-server/bin/linux-x64/dc96b837cf6bb4af9cd736aa3af08cf8279f7685'
+[597377 ms] 
+[597377 ms] 
+[597378 ms] Start: Run in container: mkdir -p '/home/vscode/.vscode-server/bin' && ln -snf '/vscode/vscode-server/bin/linux-x64/dc96b837cf6bb4af9cd736aa3af08cf8279f7685' '/home/vscode/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685'
+[597382 ms] 
+[597382 ms] 
+[597382 ms] Start: Run in Host: docker exec -i -u root 51269ae67c267cb10b007e43f02c8af0359cebd175b9fe832ac8fdab82d7ed62 /bin/sh
+[597383 ms] Start: Run in container: test -x '/home/vscode/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/check-requirements.sh'
+[597392 ms] Start: Run in container: touch '/vscode/vscode-server/bin/linux-x64/dc96b837cf6bb4af9cd736aa3af08cf8279f7685'
+[597394 ms] 
+[597394 ms] 
+[597394 ms] Start: Run in container: '/home/vscode/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/check-requirements.sh'
+[597464 ms] 
+[597464 ms] 
+[597465 ms] Start: Launching Dev Containers helper.
+[597465 ms] ssh-agent: SSH_AUTH_SOCK not set on wsl host.
+[597465 ms] ssh-agent: SSH_AUTH_SOCK not set on local host.
+[597466 ms] Start: Run in container: test -e /tmp/.X11-unix/X0
+[597471 ms] 
+[597472 ms] 
+[597472 ms] Exit code 1
+[597473 ms] Start: Run in container: mkdir -p '/tmp/.X11-unix'
+[597477 ms] 
+[597478 ms] 
+[597478 ms] X11 forwarding: DISPLAY in container (:0) forwarded to wsl host (:0).
+[597478 ms] Start: Run in container: gpgconf --list-dirs
+[597482 ms] sysconfdir:/etc/gnupg
+bindir:/usr/bin
+libexecdir:/usr/lib/gnupg
+libdir:/usr/lib/x86_64-linux-gnu/gnupg
+datadir:/usr/share/gnupg
+localedir:/usr/share/locale
+socketdir:/home/vscode/.gnupg
+dirmngr-socket:/home/vscode/.gnupg/S.dirmngr
+agent-ssh-socket:/home/vscode/.gnupg/S.gpg-agent.ssh
+agent-extra-socket:/home/vscode/.gnupg/S.gpg-agent.extra
+agent-browser-socket:/home/vscode/.gnupg/S.gpg-agent.browser
+agent-socket:/home/vscode/.gnupg/S.gpg-agent
+homedir:/home/vscode/.gnupg
+[597483 ms] 
+[597483 ms] Start: Run in container: ls '/home/vscode/.gnupg/private-keys-v1.d' 2>/dev/null
+[597491 ms] 
+[597492 ms] 
+[597492 ms] Exit code 2
+[597493 ms] Start: Run in Host: gpgconf --list-dirs
+[597500 ms] sysconfdir:/etc/gnupg
+bindir:/usr/bin
+libexecdir:/usr/lib/gnupg
+libdir:/usr/lib/x86_64-linux-gnu/gnupg
+datadir:/usr/share/gnupg
+localedir:/usr/share/locale
+socketdir:/run/user/1000/gnupg
+dirmngr-socket:/run/user/1000/gnupg/S.dirmngr
+keyboxd-socket:/run/user/1000/gnupg/S.keyboxd
+agent-ssh-socket:/run/user/1000/gnupg/S.gpg-agent.ssh
+agent-extra-socket:/run/user/1000/gnupg/S.gpg-agent.extra
+agent-browser-socket:/run/user/1000/gnupg/S.gpg-agent.browser
+agent-socket:/run/user/1000/gnupg/S.gpg-agent
+homedir:/home/a697670/.gnupg
+[597500 ms] 
+[597511 ms] Start: Run in container: test -f '/home/vscode/.gnupg/pubring.kbx'
+[597513 ms] 
+[597513 ms] 
+[597513 ms] Exit code 1
+[597513 ms] Start: Run in container: test -f '/home/vscode/.gnupg/pubring.gpg'
+[597516 ms] 
+[597517 ms] 
+[597517 ms] Exit code 1
+[597517 ms] Start: Run in container: test -f '/home/vscode/.gnupg/trustdb.gpg'
+[597529 ms] 
+[597530 ms] 
+[597530 ms] Exit code 1
+[597530 ms] Start: Run in container: mkdir -p -m 700 '/home/vscode/.gnupg'
+[597530 ms] gpg-agent: Socket in container (/home/vscode/.gnupg/S.gpg-agent) forwarded to wsl host (/run/user/1000/gnupg/S.gpg-agent.extra).
+[597535 ms] 
+[597535 ms] 
+[597535 ms] Start: Run in container: (command -v 'docker' || command -v 'oras' || command -v 'skopeo') >/dev/null 2>&1
+[597546 ms] 
+[597547 ms] 
+[597547 ms] Exit code 127
+[597548 ms] Start: Run in Host: docker exec -i -u vscode 51269ae67c267cb10b007e43f02c8af0359cebd175b9fe832ac8fdab82d7ed62 /bin/sh
+[597548 ms] userEnvProbe: loginInteractiveShell (default)
+[597549 ms] Start: Run in container: test -f '/tmp/devcontainers-6e266566-039f-41f9-9b59-29e81fb2a1e51741184992499/env-loginInteractiveShell.json'
+[597566 ms] Start: Run in container: echo ~
+[597567 ms] 
+[597567 ms] 
+[597567 ms] Exit code 1
+[597567 ms] userEnvProbe: not found in cache
+[597568 ms] userEnvProbe shell: /bin/sh
+[597582 ms] Start: Run in Host: gpg-connect-agent updatestartuptty /bye
+[597583 ms] Start: Run in container: # Test for /home/vscode/.ssh/known_hosts and ssh
+[597596 ms] 
+[597596 ms] 
+[597597 ms] Start: Run in container: # Copy /home/a697670/.ssh/known_hosts to /home/vscode/.ssh/known_hosts
+[597604 ms] 
+[597604 ms] 
+[597613 ms] 
+[597613 ms] 
+[597613 ms] Start: Run in container: command -v git >/dev/null 2>&1 && git config --system --replace-all credential.helper '!f() { /home/vscode/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-df9270b4-ea52-4c58-beb8-214bfc3de260.js git-credential-helper $*; }; f' || true
+[597617 ms] 
+[597618 ms] 
+[597619 ms] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[597693 ms] Start: Run in container: cat '/home/vscode/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/product.json'
+[597703 ms] Start: Run in container: cat '/home/vscode/.vscode-server/data/Machine/.connection-token-dc96b837cf6bb4af9cd736aa3af08cf8279f7685' 2>/dev/null || (umask 377 && echo '4bd88d96-d79a-47aa-983f-06c393253952' >'/home/vscode/.vscode-server/data/Machine/.connection-token-dc96b837cf6bb4af9cd736aa3af08cf8279f7685-96825142-69b8-495a-9670-2d38bc6ce940' && mv -n '/home/vscode/.vscode-server/data/Machine/.connection-token-dc96b837cf6bb4af9cd736aa3af08cf8279f7685-96825142-69b8-495a-9670-2d38bc6ce940' '/home/vscode/.vscode-server/data/Machine/.connection-token-dc96b837cf6bb4af9cd736aa3af08cf8279f7685' && rm -f '/home/vscode/.vscode-server/data/Machine/.connection-token-dc96b837cf6bb4af9cd736aa3af08cf8279f7685-96825142-69b8-495a-9670-2d38bc6ce940' && cat '/home/vscode/.vscode-server/data/Machine/.connection-token-dc96b837cf6bb4af9cd736aa3af08cf8279f7685')
+[597711 ms] 4bd88d96-d79a-47aa-983f-06c393253952
+[597712 ms] 
+[597712 ms] Start: Starting VS Code Server
+[597713 ms] Start: Preparing Extensions
+[597713 ms] Start: Run in container: test ! -f '/home/vscode/.vscode-server/data/Machine/.installExtensionsMarker' && set -o noclobber && mkdir -p '/home/vscode/.vscode-server/data/Machine' && { > '/home/vscode/.vscode-server/data/Machine/.installExtensionsMarker' ; } 2> /dev/null
+[597717 ms] 
+[597717 ms] 
+[597720 ms] Extensions cache, install extensions: haskell.haskell
+[597720 ms] Start: Run in container: test -d /home/vscode/.vscode-server/extensionsCache && ls /home/vscode/.vscode-server/extensionsCache || true
+[597724 ms] 
+[597724 ms] 
+[597725 ms] Start: Run in container: test -d /vscode/vscode-server/extensionsCache && ls /vscode/vscode-server/extensionsCache || true
+[597730 ms] haskell.haskell-2.4.4
+justusadam.language-haskell-3.6.0
+[597731 ms] 
+[597731 ms] Extensions cache, link in container: haskell.haskell-2.4.4
+[597731 ms] Start: Run in container: mkdir -p '/home/vscode/.vscode-server/extensionsCache' && ln -s '/vscode/vscode-server/extensionsCache'/* '/home/vscode/.vscode-server/extensionsCache' || true
+[597732 ms] /home/vscode
+[597732 ms] 
+[597732 ms] Start: Run in container: cat <<'EOF-/tmp/vscode-remote-containers-df9270b4-ea52-4c58-beb8-214bfc3de260.js' >/tmp/vscode-remote-containers-df9270b4-ea52-4c58-beb8-214bfc3de260.js
+[597739 ms] 
+[597740 ms] 
+[597740 ms] Start: Run in container: cat <<'EOF-/tmp/vscode-remote-containers-server-df9270b4-ea52-4c58-beb8-214bfc3de260.js' >/tmp/vscode-remote-containers-server-df9270b4-ea52-4c58-beb8-214bfc3de260.js_1741185590901
+[597741 ms] 
+[597742 ms] 
+[597742 ms] Optimizing extensions for quality: stable
+[597742 ms] Start: Run in container: cd /vscode/vscode-server/extensionsCache && touch 'haskell.haskell-2.4.4'
+[597743 ms] Start: Run in Host: docker exec -i -u vscode -e SHELL=/bin/sh -w /home/vscode/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685 51269ae67c267cb10b007e43f02c8af0359cebd175b9fe832ac8fdab82d7ed62 /home/vscode/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/code-server --log debug --force-disable-user-env --server-data-dir /home/vscode/.vscode-server --use-host-proxy --telemetry-level all --accept-server-license-terms --host 127.0.0.1 --port 0 --connection-token-file /home/vscode/.vscode-server/data/Machine/.connection-token-dc96b837cf6bb4af9cd736aa3af08cf8279f7685 --extensions-download-dir /home/vscode/.vscode-server/extensionsCache --install-extension haskell.haskell --start-server --disable-websocket-compression --skip-requirements-check
+[597748 ms] 
+[597748 ms] 
+[597748 ms] 
+[597748 ms] 
+[598006 ms] *
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+[598012 ms] Server bound to 127.0.0.1:41299 (IPv4)
+Extension host agent listening on 41299
+
+[598012 ms] Start: Run in container: echo 41299 >'/home/vscode/.vscode-server/data/Machine/.devport-dc96b837cf6bb4af9cd736aa3af08cf8279f7685'
+[598014 ms] 
+[598014 ms] 
+[598015 ms] Port forwarding for container port 41299 starts listening on local port.
+[598016 ms] Port forwarding local port 41299 to container port 41299
+[598028 ms] Start: Run in container: # Test for /home/vscode/.gitconfig and git
+[598031 ms] 
+[598031 ms] 
+[598031 ms] Start: Run in container: # Copy /home/a697670/.gitconfig to /home/vscode/.gitconfig
+[598035 ms] 
+[598036 ms] 
+[598042 ms] userEnvProbe PATHs:
+Probe:     '/home/vscode/.cabal/bin:/home/vscode/.ghcup/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+Container: '/home/vscode/.cabal/bin:/home/vscode/.ghcup/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+[598042 ms] Start: Run in container: mkdir -p '/tmp/devcontainers-6e266566-039f-41f9-9b59-29e81fb2a1e51741184992499' && cat > '/tmp/devcontainers-6e266566-039f-41f9-9b59-29e81fb2a1e51741184992499/env-loginInteractiveShell.json' << 'envJSON'
+[598046 ms] 
+[598046 ms] 
+[598046 ms] Start: Run in container: # Cleaning up git config
+[598056 ms] Initializing configuration support...
+[598056 ms] Internal initialization of dev container support package...
+[598070 ms] Port forwarding connection from 56646 > 41299 > 41299 in the container.
+[598071 ms] Start: Run in Host: docker exec -i -u vscode -e VSCODE_REMOTE_CONTAINERS_SESSION=6e266566-039f-41f9-9b59-29e81fb2a1e51741184992499 51269ae67c267cb10b007e43f02c8af0359cebd175b9fe832ac8fdab82d7ed62 /home/vscode/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node -e 
+[598081 ms] 
+[598081 ms] 
+[598083 ms] Start: Run in Host: git config --global --get gpg.ssh.allowedSignersFile
+[598083 ms] Start: Run in container: command -v git >/dev/null 2>&1 && git config --global --replace-all credential.helper '!f() { /home/vscode/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-df9270b4-ea52-4c58-beb8-214bfc3de260.js git-credential-helper $*; }; f' || true
+[598097 ms] 
+[598098 ms] 
+[598228 ms] Ignoring option 'skip-requirements-check': not supported for server.
+[598258 ms] [14:39:51] 
+
+
+
+
+[598279 ms] Port forwarding 56646 > 41299 > 41299 stderr: Connection established
+[598290 ms] [14:39:51] Installing extensions...
+[598297 ms] [14:39:51] Extension host agent started.
+[598383 ms] Port forwarding connection from 56648 > 41299 > 41299 in the container.
+[598384 ms] Start: Run in Host: docker exec -i -u vscode -e VSCODE_REMOTE_CONTAINERS_SESSION=6e266566-039f-41f9-9b59-29e81fb2a1e51741184992499 51269ae67c267cb10b007e43f02c8af0359cebd175b9fe832ac8fdab82d7ed62 /home/vscode/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node -e 
+[598394 ms] [14:39:51] Started initializing default profile extensions in extensions installation folder. file:///home/vscode/.vscode-server/extensions
+[598458 ms] [14:39:51] [127.0.0.1][0435a746][ManagementConnection] New connection established.
+[598532 ms] [14:39:51] Log level changed to info
+[598570 ms] Port forwarding 56648 > 41299 > 41299 stderr: Connection established
+[598767 ms] [14:39:51] [127.0.0.1][55c1fa0c][ExtensionHostConnection] New connection established.
+[598797 ms] [14:39:51] [127.0.0.1][55c1fa0c][ExtensionHostConnection] <362> Launched Extension Host Process.
+[598851 ms] [14:39:52] Completed initializing default profile extensions in extensions installation folder. file:///home/vscode/.vscode-server/extensions
+[599974 ms] [14:39:53] Installing extension 'haskell.haskell'...
+[599976 ms] [14:39:53] Getting Manifest... haskell.haskell
+[600125 ms] [14:39:53] Installing extension: haskell.haskell
+[600577 ms] [14:39:53] Getting Manifest... justusadam.language-haskell
+[600919 ms] [14:39:54] Installing extension: justusadam.language-haskell
+[604266 ms] [14:39:57] Extension signature verification result for justusadam.language-haskell: Success. Duration: 2598ms.
+[604267 ms] [14:39:57] Extension signature verification result for haskell.haskell: Success. Duration: 2673ms.
+[604385 ms] [14:39:57] Extracted extension to file:///home/vscode/.vscode-server/extensions/haskell.haskell-2.4.4: haskell.haskell
+[604400 ms] [14:39:57] Extracted extension to file:///home/vscode/.vscode-server/extensions/justusadam.language-haskell-3.6.0: justusadam.language-haskell
+[604478 ms] [14:39:57] Renamed to /home/vscode/.vscode-server/extensions/haskell.haskell-2.4.4
+[604501 ms] [14:39:57] Extracting extension completed. haskell.haskell
+[604575 ms] [14:39:57] Renamed to /home/vscode/.vscode-server/extensions/justusadam.language-haskell-3.6.0
+[604578 ms] [14:39:57] Extracting extension completed. justusadam.language-haskell
+[604702 ms] [14:39:57] Extension installed successfully: haskell.haskell
+[14:39:57] Extension installed successfully: justusadam.language-haskell
+[604704 ms] [14:39:57] Extension 'haskell.haskell' v2.4.4 was successfully installed.
+[14:39:57] Extension 'justusadam.language-haskell' v3.6.0 was successfully installed.
