@@ -24,7 +24,7 @@ RUN groupadd --gid $USER_GID $USERNAME && \
 # Set vscode as the default user.
 USER $USERNAME
 
-# Install ghcup
+# Install ghcup - Bumped versions from https://www.haskell.org/ghcup/install/ (look for "Supported tools")
 RUN sudo curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | \
     BOOTSTRAP_HASKELL_NONINTERACTIVE=1 \
     BOOTSTRAP_HASKELL_GHC_VERSION=9.4.8 \
